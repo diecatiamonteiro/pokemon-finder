@@ -16,7 +16,7 @@ Pokémon Finder is a web application that allows users to search for Pokémon by
 ## Demo
 
 You can try out the Pokémon Finder app by visiting the following link:
-[Pokémon Finder Demo](https://github.com/diecatiamonteiro/pokemon-finder)
+[Pokémon Finder Demo](https://diecatiamonteiro.github.io/pokemon-finder/)
 
 
 ## Features
@@ -47,4 +47,4 @@ You can try out the Pokémon Finder app by visiting the following link:
 
 ### Error alert:
 
-![Pokémon Error](./images/screenshots/screenshot-not-found.jpg)
+![Pokémon Error](./images/screenshots/screenshot-not-found.png)
