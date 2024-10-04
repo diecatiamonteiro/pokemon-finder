@@ -1,0 +1,239 @@
+/* RESET */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  background-image: url(./images/background-img.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* GENERAL */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Pokemon Solid", sans-serif;
+  margin-top: 20px;
+  color: #ed2224;
+  font-size: 6rem;
+  letter-spacing: 11px;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 4px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* CARD */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+
+  background-color: #ed2224;
+  width: 500px;
+  height: auto;
+  margin-top: 20px;
+  border: 7px solid black;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(34, 22, 7, 0.9), 0 15px 40px rgba(34, 22, 7, 0.7);
+
+  display: none;
+}
+
+.card li {
+  font-size: 1.2rem;
+  list-style-type: none;
+  text-align: left;
+  margin: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure the items are vertically aligned */
+}
+
+#abilities {
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  margin: 30px auto 20px auto;
+  max-width: 390px;
+  border-radius: 10px;
+}
+
+.card img {
+  display: block;
+  margin: 10px auto;
+  width: 130px;
+  height: auto; /* Maintain the aspect ratio */
+  border: 8px solid rgba(0, 0, 0);
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  position: relative;
+  color: black;
+}
+
+/* Underline */
+.card h3::after {
+  content: "";
+  display: block;
+  width: 75%; /* Smaller underline width */
+  height: 3px; /* Thickness of the underline */
+  background-color: black; /* Color of the underline */
+  margin: 0 auto; /* Center the underline */
+  margin-top: 1px; /* Distance between the underline and the text */
+}
+
+/* SEARCH AREA */
+
+.search-area {
+  position: relative;
+  padding: 10px 0 0 0;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search {
+  font-size: 1.1rem;
+  width: 65%;
+  padding: 7px;
+  background-color: #ffcb05;
+  font-family: "Poppins", sans-serif;
+  border: 3px solid black;
+  border-radius: 7px;
+}
+
+#search:focus {
+  outline: none;
+  border: 3px solid black;
+}
+
+#button {
+  cursor: pointer;
+  width: 30%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #3b4cca;
+  border: 3px solid black;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+#button:hover {
+  background-color: #273ac4;
+  border-color: black;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* SUGGESTION BOX */
+
+.all-names {
+  padding-left: 1.5px;
+  width: 61%;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: 99%;
+  left: 1.5%;
+  background-color: #ffcb05;
+  z-index: 1000;
+}
+
+.suggestion {
+  font-size: 1rem;
+}
+
+.suggestion:hover {
+  background-color: #3b4cca;
+  color: white;
+  cursor: pointer;
+  padding-left: 0;
+}
+
+.suggestion.active {
+  background-color: #ffcb05;
+  color: white;
+}
+
+/* Scroll bar */
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #3b4cca; /* Background of the scrollbar track */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ed2224; /* Scrollbar thumb color */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 2px solid #ed2224; /* Adds a border to the thumb */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cf8323; /* Darker shade on hover */
+}
+
+/* Spinner */
+
+#spinner {
+  display: none;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #ed2224;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./index.js" defer></script>
+    <title>Pokémon Finder</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/pokemon-solid"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>PokeFinder</h1>
+    <div class="search-area">
+      <input type="text" id="search" placeholder="Enter Pokémon name" />
+      <button id="button">Search</button>
+      <div class="all-names"></div>
+    </div>
+
+    <div id="spinner"></div>
+
+    <div class="card">
+      <h2 id="name"></h2>
+      <img id="icon" alt="Pokémon icon" />
+      <div id="stats">
+        <h3>Stats</h3>
+        <ul id="stats-list"></ul>
+      </div>
+      <div id="abilities">
+        <h3>Abilities</h3>
+        <ul id="abilities-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
