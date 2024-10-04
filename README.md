@@ -48,3 +48,7 @@ You can try out the Pokémon Finder app by visiting the following link:
 ### Error alert:
 
 ![Pokémon Error](./images/screenshots/screenshot-not-found.png)
+
+<br>
+
+# Thanks for reading. Enjoy your Pokémon search!
